@@ -2,6 +2,8 @@
 
 一个具备主流项目基础配置、预留配置空间的 vue-cli 自定义模版，基于 vue 2.x + vue-cli 3 实现。
 
+愿景是不再为新项目而重复性的初始化配置，诚恳欢迎 star 和 PR～ (´▽｀)
+
 模版源项目为 [vue-boilerplate](https://github.com/zoux/vue-boilerplate)。
 
 
