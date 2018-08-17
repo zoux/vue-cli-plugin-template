@@ -1,0 +1,48 @@
+{
+  "name": "{{ name }}",
+  "version": "1.0.0",
+  "description": "{{ description }}",
+  "author": "{{ author }}",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    {{#lint}}
+    "lint": "vue-cli-service lint",
+    {{/lint}}
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "sass-bem": "^2.6.5",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.1",
+    {{#lint}}
+    "@vue/cli-plugin-eslint": "^3.0.1",
+    {{/lint}}
+    "@vue/cli-service": "^3.0.1",
+    {{#lint}}
+    "@vue/eslint-config-standard": "^3.0.1",
+    "lint-staged": "^7.2.2",
+    {{/lint}}
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "vue-template-compiler": "^2.5.17"
+  }{{#lint}},
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "vue-cli-service lint",
+      "git add"
+    ],
+    "*.vue": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }{{/lint}}
+}
