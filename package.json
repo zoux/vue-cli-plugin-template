@@ -1,0 +1,23 @@
+{
+  "name": "@zouxin/vue-cli-plugin-template",
+  "version": "1.0.10",
+  "description": "vue-cli 3 plugin to add @zouxin/vue-boilerplate",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zoux/vue-cli-plugin-template.git"
+  },
+  "keywords": [
+    "vue-cli-plugin-template",
+    "vue-boilerplate",
+    "vue",
+    "vue-cli",
+    "vue-cli-plugin"
+  ],
+  "author": "zoux",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zoux/vue-cli-plugin-template/issues"
+  },
+  "homepage": "https://github.com/zoux/vue-cli-plugin-template#readme"
+}

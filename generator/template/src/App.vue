@@ -49,5 +49,7 @@ export default {
 
 <style lang="scss">
   @import "./assets/style/common";
+  <%_ if (options.features && options.features.includes('iconfont')) { _%>
   @import "./assets/iconfont/iconfont.css";
+  <%_ } _%>
 </style>
