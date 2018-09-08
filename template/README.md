@@ -2,6 +2,8 @@
 
 一个具备主流项目基础配置、预留配置空间的 vue 模版，基于  vue 2.x + vue-cli 3 实现。
 
+愿景是不再为新项目而重复性的初始化配置，诚恳欢迎 star 和 PR～ (´▽｀)
+
 原始模版和思想来自于 [vue-develop-template](https://github.com/PerseveranceZ/vue-develop-template)。
 
 
@@ -31,37 +33,35 @@ npm run lint
 
 ```
 .
-├── assets                        公共资源
-│   ├── iconfont                  阿里 iconfont
+├── assets                              公共资源
+│   ├── iconfont                        阿里 iconfont
 │   ├── image
 │   └── style
-├── components                    公共组件
+├── components                          公共组件
 │   └── someComponents
 │   └── index.js
-├── config                        项目配置   
-│   ├── interceptors              拦截器配置
+├── config                              项目配置
+│   ├── interceptors                    拦截器配置
 │   └── index.js
-├── plugins                       插件配置
+├── plugins                             插件配置
 │   ├── api.js
 │   ├── axios.js
 │   ├── const.js
-│   ├── inject.js                 注入根实例属性
+│   ├── inject.js                       注入根实例属性
 │   ├── router.js
 │   └── store.js
-├── routes                        公共路由
+├── routes                              公共路由
 │   ├── modules.js
 │   └── index.js
-├── service                       公共服务
-│   ├── api                       ajax 请求模块
-│   ├── const                     const 常量模块
-│   └── store                     vuex 状态模块
-├── utils                         公共工具
-│   ├── modules
-│   ├── requireContextGetModules  require.context 工具方法
-│   └── index.js
-├── views                         模块/页面
-├── App.vue                       根页面
-├── main.js                       生成根实例
+├── service                             公共服务
+│   ├── api                             ajax 请求模块
+│   ├── const                           const 常量模块
+│   ├── store                           vuex 状态模块
+│   └── utils                           工具库
+│        └── requireContextGetModules   require.context 工具方法
+├── views                               模块/页面
+├── App.vue                             根页面
+├── main.js                             生成根实例
 .
 ```
 

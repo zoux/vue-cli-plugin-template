@@ -1,5 +1,5 @@
 import common from './common'
-import requireContextGetModules from '../../utils/requireContextGetModules'
+import requireContextGetModules from '../utils/requireContextGetModules'
 
 export default {
   ...common,

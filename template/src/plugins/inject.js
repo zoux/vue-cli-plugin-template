@@ -1,7 +1,7 @@
 import axios from './axios'
 import api from './api'
 import consts from './const'
-import utils from '../utils'
+import utils from '../service/utils'
 
 function inject (Vue, name, module) {
   Object.defineProperty(Vue.prototype, name, {
