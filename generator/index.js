@@ -2,10 +2,7 @@ const fs = require('fs')
 
 module.exports = (api, options) => {
   renderCommon()
-
-  api.onCreateComplete(() => {
-    renderManuals()
-  })
+  renderManuals()
 
   function renderCommon () {
     api.extendPackage({
@@ -38,16 +35,16 @@ module.exports = (api, options) => {
       // template/src/App.vue
     }
   }
+}
 
-  function __remove (path, isTop = true) {
-    if (isTop) console.log(path, fs.existsSync(path))
-    if (!fs.existsSync(path)) return
-    if (!fs.statSync(path).isDirectory()) return fs.unlinkSync(path)
-    const files = fs.readdirSync(path)
-    files.forEach(item => {
-      const currPath = `${path}/${item}`
-      fs.statSync(currPath).isDirectory() ? __remove(currPath, false) : fs.unlinkSync(currPath)
-    })
-    fs.rmdirSync(path)
-  }
+function __remove (path, isTop = true) {
+  if (isTop) console.log(path, fs.existsSync(path))
+  if (!fs.existsSync(path)) return
+  if (!fs.statSync(path).isDirectory()) return fs.unlinkSync(path)
+  const files = fs.readdirSync(path)
+  files.forEach(item => {
+    const currPath = `${path}/${item}`
+    fs.statSync(currPath).isDirectory() ? __remove(currPath, false) : fs.unlinkSync(currPath)
+  })
+  fs.rmdirSync(path)
 }
