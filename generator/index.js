@@ -37,14 +37,13 @@ module.exports = (api, options) => {
   }
 }
 
-function __remove (path, isTop = true) {
-  if (isTop) console.log(path, fs.existsSync(path))
+function __remove (path) {
   if (!fs.existsSync(path)) return
   if (!fs.statSync(path).isDirectory()) return fs.unlinkSync(path)
   const files = fs.readdirSync(path)
   files.forEach(item => {
     const currPath = `${path}/${item}`
-    fs.statSync(currPath).isDirectory() ? __remove(currPath, false) : fs.unlinkSync(currPath)
+    fs.statSync(currPath).isDirectory() ? __remove(currPath) : fs.unlinkSync(currPath)
   })
   fs.rmdirSync(path)
 }

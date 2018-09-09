@@ -1,7 +1,7 @@
 module.exports = {
   outputDir: 'dist',
   assetsDir: 'static',
-  <%_ if (options.features && options.features.includes('scss-bem')) { _%>
+  <%_ if (!(options.features && !options.features.includes('scss-bem'))) { _%>
   css: {
     loaderOptions: {
       sass: {

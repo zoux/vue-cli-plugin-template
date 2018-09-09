@@ -1,4 +1,4 @@
-const isManually = answers => answers.preset === 'Manually'
+const isManually = answers => answers.preset === 'manually'
 
 module.exports = [
   {
@@ -7,7 +7,7 @@ module.exports = [
     message: 'Please pick a preset:',
     choices: [
       { name: 'Default', value: 'default' },
-      { name: 'Manually select features', value: 'Manually' }
+      { name: 'Manually select features', value: 'manually' }
     ]
   },
   {
