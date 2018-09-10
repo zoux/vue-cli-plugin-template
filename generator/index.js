@@ -1,5 +1,3 @@
-const fs = require('fs')
-
 module.exports = (api, options) => {
   renderCommon()
   renderManuals()
@@ -10,7 +8,11 @@ module.exports = (api, options) => {
         "axios": "^0.18.0"
       }
     })
-    __remove(api.resolve('./src'))
+    api.render(files => {
+      Object.keys(files)
+        .filter(path => path.startsWith('src/'))
+        .forEach(path => delete files[path])
+    })
     api.render('./template')
   }
 
@@ -29,21 +31,13 @@ module.exports = (api, options) => {
     }
 
     if (manualNotExist('iconfont')) {
-      __remove(api.resolve('./.eslintignore'))
-      __remove(api.resolve('./src/assets/iconfont'))
+      api.render(files => {
+        Object.keys(files)
+          .filter(path => path.startsWith('.eslintignore') || path.startsWith('src/assets/iconfont'))
+          .forEach(path => delete files[path])
+      })
       // ejs 控制渲染的有：
       // template/src/App.vue
     }
   }
-}
-
-function __remove (path) {
-  if (!fs.existsSync(path)) return
-  if (!fs.statSync(path).isDirectory()) return fs.unlinkSync(path)
-  const files = fs.readdirSync(path)
-  files.forEach(item => {
-    const currPath = `${path}/${item}`
-    fs.statSync(currPath).isDirectory() ? __remove(currPath) : fs.unlinkSync(currPath)
-  })
-  fs.rmdirSync(path)
 }
