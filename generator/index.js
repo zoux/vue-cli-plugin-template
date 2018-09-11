@@ -5,7 +5,13 @@ module.exports = (api, options) => {
   function renderCommon () {
     api.extendPackage({
       dependencies: {
-        "axios": "^0.18.0"
+        "axios": "^0.18.0",
+        "vue-router": "^3.0.1",
+        "vuex": "^3.0.1"
+      },
+      devDependencies: {
+        "node-sass": "^4.9.0",
+        "sass-loader": "^7.0.1"
       }
     })
     api.render(files => {
