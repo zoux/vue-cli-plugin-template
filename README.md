@@ -4,7 +4,7 @@
 
 愿景是不再为新项目而重复性的初始化配置，诚恳欢迎 star 和 PR～ (´▽｀)
 
-模版项目为 [vue-boilerplate](https://github.com/zoux/vue-boilerplate)。
+模版项目为 [vue-template](https://github.com/zoux/vue-template)。
 
 
 ## Use
