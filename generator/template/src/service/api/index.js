@@ -1,4 +1,4 @@
-import common from './modules/common'
+import common from './common'
 import a from './modules/a'
 
 export default {

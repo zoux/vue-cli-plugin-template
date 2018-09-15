@@ -13,7 +13,7 @@ export default [
         meta: {
           title: 'b-x'
         },
-        component: () => import('@/views/b/children/b-x.vue')
+        component: () => import('@/views/b/x.vue')
       }
     ]
   }
