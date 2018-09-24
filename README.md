@@ -1,10 +1,8 @@
 ## Intro
 
-基于 vue-boilerplate 实现的 vue 2.x + vue-cli 3 插件。
+基于 [vue-template](https://github.com/zoux/vue-template) 实现的 vue 2.x + vue-cli 3 插件。
 
 愿景是不再为新项目而重复性的初始化配置，诚恳欢迎 star 和 PR～ (´▽｀)
-
-模版项目为 [vue-template](https://github.com/zoux/vue-template)。
 
 
 ## Use
@@ -25,7 +23,7 @@ vue add @zouxin/template
 - webpack require.context 实现 router vuex 的自动注入
 - 预留了 router axios 全局拦截器
 - 开发环境默认启用 vuex 的严格模式、日志监控
-- 全局注入 axios api const utils 等服务
+- 可配置全局注入或按需加载 $axios $api $constants $utils 等服务
 - 全局注入 scss-bem
 
 
@@ -46,8 +44,8 @@ vue add @zouxin/template
 ├── plugins                             插件配置
 │   ├── api.js
 │   ├── axios.js
-│   ├── const.js
-│   ├── inject.js                       注入根实例属性
+│   ├── constants.js
+│   ├── index.js
 │   ├── router.js
 │   └── store.js
 ├── routes                              公共路由
@@ -55,7 +53,7 @@ vue add @zouxin/template
 │   └── index.js
 ├── service                             公共服务
 │   ├── api                             ajax 请求模块
-│   ├── const                           const 常量模块
+│   ├── constants                       constants 常量模块
 │   ├── store                           vuex 状态模块
 │   └── utils                           工具库
 │        └── requireContextGetModules   require.context 工具方法
