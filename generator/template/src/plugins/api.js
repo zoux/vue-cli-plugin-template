@@ -17,7 +17,7 @@ Object.keys(API_SERVICE).forEach(key => {
   ) => {
     const axiosConfig = {
       method,
-      url: `${prefix}/${url}`,
+      url: `${prefix}${url}`,
       [method === 'get' ? 'params' : 'data']: { ...defaultParams, ...params },
       option: {
         errorIntercept,

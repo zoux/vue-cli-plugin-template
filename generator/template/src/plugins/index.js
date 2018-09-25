@@ -1,7 +1,7 @@
 import axios from './axios'
 import api from './api'
-import consts from './const'
-import utils from '../service/utils'
+import constants from './constants'
+import utils from './utils'
 
 function inject (Vue, name, module) {
   Object.defineProperty(Vue.prototype, name, {
@@ -13,9 +13,10 @@ function inject (Vue, name, module) {
 
 export default {
   install (Vue) {
-    inject(Vue, '$ajax', axios)
+    // 可自定义的注释或删除全局注入
+    inject(Vue, '$axios', axios)
     inject(Vue, '$api', api)
-    inject(Vue, '$const', consts)
+    inject(Vue, '$constants', constants)
     inject(Vue, '$utils', utils)
   }
 }

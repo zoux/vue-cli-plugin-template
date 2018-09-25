@@ -42,5 +42,5 @@ export const API_DEFAULT_CONFIG = {
 
 // 方便开发的配置
 export const DEBUG_VUE_TIP = false // vue tip 开关
-export const CONSOLE_REQUEST_ENABLE = true // 开启请求参数打印
-export const CONSOLE_RESPONSE_ENABLE = true // 开启响应参数打印
+export const CONSOLE_REQUEST_ENABLE = !NODE_ENV_IS_PRODUCTION && false // 开启请求参数打印
+export const CONSOLE_RESPONSE_ENABLE = !NODE_ENV_IS_PRODUCTION && true // 开启响应参数打印

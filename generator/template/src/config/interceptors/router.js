@@ -5,7 +5,7 @@ export function routerBeforeEachFunc (to, from, next) {
   next()
 }
 
-export function routerAfterEachFunc (to, from) {
+export function routerAfterEachFunc (to) {
   const prefix = 'vue.js'
   const { title } = to.meta
   document.title = title ? `${prefix} - ${title}` : prefix
