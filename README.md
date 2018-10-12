@@ -1,6 +1,6 @@
 ## Intro
 
-基于 [vue-template](https://github.com/zoux/vue-template) 实现的 vue 2.x + vue-cli 3 插件。
+基于 [vue-template](https://github.com/zouxinjs/vue-template) 实现的 vue 2.x + vue-cli 3 插件。
 
 愿景是不再为新项目而重复性的初始化配置，诚恳欢迎 star 和 PR～ (´▽｀)
 
