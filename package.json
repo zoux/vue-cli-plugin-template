@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zouxinjs/vue-cli-plugin-template.git"
+    "url": "git+https://github.com/zoux/vue-cli-plugin-template.git"
   },
   "keywords": [
     "vue-cli-plugin-template",
@@ -17,7 +17,7 @@
   "author": "zoux",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zouxinjs/vue-cli-plugin-template/issues"
+    "url": "https://github.com/zoux/vue-cli-plugin-template/issues"
   },
-  "homepage": "https://github.com/zouxinjs/vue-cli-plugin-template#readme"
+  "homepage": "https://github.com/zoux/vue-cli-plugin-template#readme"
 }
