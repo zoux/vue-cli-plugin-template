@@ -42,12 +42,13 @@ vue add @zouxin/template
 │   ├── interceptors                    拦截器配置
 │   └── index.js
 ├── plugins                             插件配置
-│   ├── api.js
-│   ├── axios.js
-│   ├── constants.js
-│   ├── index.js
-│   ├── router.js
-│   └── store.js
+│   └── template
+│       ├── api.js
+│       ├── axios.js
+│       ├── constants.js
+│       ├── index.js
+│       ├── router.js
+│       └── store.js
 ├── routes                              公共路由
 │   ├── modules.js
 │   └── index.js
