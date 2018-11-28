@@ -1,16 +1,15 @@
 import Vue from 'vue'
 
-import { DEBUG_VUE_TIP } from './config'
 import CommonComponents from './components'
-import plugins from './plugins'
-import router from './plugins/router'
-import store from './plugins/store'
+import template from './plugins/template'
+import router from './plugins/template/router'
+import store from './plugins/template/store'
 import App from './App.vue'
 
-Vue.config.productionTip = DEBUG_VUE_TIP
-
 Vue.use(CommonComponents)
-Vue.use(plugins)
+Vue.use(template)
+
+Vue.config.productionTip = false
 
 new Vue({
   router,

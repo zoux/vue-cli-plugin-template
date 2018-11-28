@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-import { AXIOS_DEFAULT_CONFIG } from '../config'
-import { requestSuccessFunc, requestFailFunc, responseSuccessFunc, responseFailFunc } from '../config/interceptors/axios'
+import { AXIOS_DEFAULT_CONFIG } from '../../config'
+import { requestSuccessFunc, requestFailFunc, responseSuccessFunc, responseFailFunc } from '../../config/interceptors/axios'
 
 // 注入默认配置
 const axiosInstance = axios.create(AXIOS_DEFAULT_CONFIG)

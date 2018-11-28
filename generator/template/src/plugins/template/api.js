@@ -1,6 +1,6 @@
 import axios from './axios'
-import { API_DEFAULT_CONFIG } from '../config'
-import API_SERVICE from '../service/api'
+import { API_DEFAULT_CONFIG } from '../../config'
+import API_SERVICE from '../../service/api'
 
 const API = {}
 
@@ -26,6 +26,7 @@ Object.keys(API_SERVICE).forEach(key => {
     }
     return axios(axiosConfig)
   }
+  Object.assign(API[key], API_SERVICE[key])
 })
 
 export default API
