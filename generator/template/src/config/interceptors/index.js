@@ -1,11 +1,2 @@
-import { routerBeforeEachFunc, routerAfterEachFunc } from './router'
-import { requestSuccessFunc, requestFailFunc, responseSuccessFunc, responseFailFunc } from './axios'
-
-export default {
-  routerBeforeEachFunc,
-  routerAfterEachFunc,
-  requestSuccessFunc,
-  requestFailFunc,
-  responseSuccessFunc,
-  responseFailFunc
-}
+export { routerBeforeEachFunc, routerAfterEachFunc } from './router'
+export { requestSuccessFunc, requestFailFunc, responseSuccessFunc, responseFailFunc } from './axios'
