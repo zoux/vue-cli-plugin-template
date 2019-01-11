@@ -1,4 +1,5 @@
 module.exports = {
+  publicPath: process.env.NODE_ENV === 'development' ? '/' : '././',
   outputDir: 'dist',
   assetsDir: 'static',
   <%_ if (!(options.features && !options.features.includes('scss-bem'))) { _%>
