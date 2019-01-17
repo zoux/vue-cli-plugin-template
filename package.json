@@ -1,7 +1,7 @@
 {
   "name": "@zouxin/vue-cli-plugin-template",
-  "version": "1.5.2",
-  "description": "vue-cli 3 plugin to add @zouxin/vue-template",
+  "version": "1.6.0",
+  "description": "vue-cli 3 plugin to add @zouxin/vue-template | @zouxin/vue-typescript-template",
   "main": "index.js",
   "repository": {
     "type": "git",
