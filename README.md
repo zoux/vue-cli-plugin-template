@@ -36,22 +36,10 @@ vue add @zouxin/template
 │   ├── image
 │   └── style
 ├── components                          公共组件
-│   └── someComponents
-│   └── index.js
 ├── config                              项目配置
 │   ├── interceptors                    拦截器配置
-│   └── index.js
 ├── plugins                             插件配置
-│   └── template
-│       ├── api.js
-│       ├── axios.js
-│       ├── constants.js
-│       ├── index.js
-│       ├── router.js
-│       └── store.js
 ├── routes                              公共路由
-│   ├── modules.js
-│   └── index.js
 ├── service                             公共服务
 │   ├── api                             ajax 请求模块
 │   ├── constants                       constants 常量模块
@@ -60,7 +48,7 @@ vue add @zouxin/template
 │        └── requireContextGetModules   require.context 工具方法
 ├── views                               模块/页面
 ├── App.vue                             根页面
-├── main.js                             生成根实例
+├── main                                根实例
 .
 ```
 
