@@ -2,7 +2,6 @@ module.exports = {
   publicPath: process.env.NODE_ENV === 'development' ? '/' : '././',
   outputDir: 'dist',
   assetsDir: 'static',
-  <%_ if (!(options.features && !options.features.includes('scss-bem'))) { _%>
   css: {
     loaderOptions: {
       sass: {
@@ -10,7 +9,6 @@ module.exports = {
       }
     }
   },
-  <%_ } _%>
   devServer: {
     proxy: {
       '/api': {
@@ -19,5 +17,10 @@ module.exports = {
         changeOrigin: true
       }
     }
+  },
+  productionSourceMap: false,
+  chainWebpack: config => {
+    config.plugins.delete('preload')
+    config.plugins.delete('prefetch')
   }
 }

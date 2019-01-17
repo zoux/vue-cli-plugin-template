@@ -1,0 +1,35 @@
+{
+  "defaultSeverity": "warning",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "node_modules/**"
+    ]
+  },
+  "rules": {
+    "quotemark": [true, "single"],
+    "indent": [true, "spaces", 2],
+    "interface-name": false,
+    "ordered-imports": false,
+    "object-literal-sort-keys": false,
+    "no-consecutive-blank-lines": false,
+    // 不检测段落末尾的「;」
+    "semicolon": false,
+    // 不检测对象最后一项不加「,」
+    "trailing-comma": false,
+    // 不检测函数名和括号之间的空格
+    "space-before-function-paren": false,
+    // 不检测 class property 定义时的访问性标示符
+    "member-access": false,
+    // 不检测打印
+    "no-console": false,
+    // 不检测 namespace
+    "no-namespace": false,
+    // 不检测 if 后的 {}
+    "curly": false,
+    // 不检测单行代码过长
+    "max-line-length": false
+  }
+}
