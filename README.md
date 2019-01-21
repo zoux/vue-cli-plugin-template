@@ -20,7 +20,7 @@ vue add @zouxin/template
 - 基于 vue-cli 3
 - 约定性的项目结构
 - 集中管理的项目配置
-- webpack require.context 实现 router vuex 的自动注入
+- webpack require.context 实现 commonComponents router vuex 的自动注入
 - 预留了 router axios 全局拦截器
 - 开发环境默认启用 vuex 的严格模式、日志监控
 - 可配置全局注入或按需加载 $axios $api $constants $utils 等服务
@@ -45,7 +45,6 @@ vue add @zouxin/template
 │   ├── constants                       constants 常量模块
 │   ├── store                           vuex 状态模块
 │   └── utils                           工具库
-│        └── requireContextGetModules   require.context 工具方法
 ├── views                               模块/页面
 ├── App.vue                             根页面
 ├── main                                根实例

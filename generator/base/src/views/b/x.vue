@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>页面b-x</div>
-    <hr><br>
+    <br><hr><br>
     <div>b-x</div>
   </div>
 </template>

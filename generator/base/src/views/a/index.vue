@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div>页面a</div>
-    <hr><br>
+    <div>page A</div>
+    <br><hr><br>
     <div>\{{ a }}</div>
     <button @click="addA">a++</button>
   </div>

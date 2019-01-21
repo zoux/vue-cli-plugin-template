@@ -1,7 +1,16 @@
 import common from './common'
-import requireContextGetModules from '@/service/utils/requireContextGetModules'
 
 export default {
   ...common,
-  modules: requireContextGetModules(require.context('./modules', false, /\.ts$/))
+  modules: (() => {
+    const modulesContext = require.context('./modules', false, /\.ts$/)
+    const chunks = modulesContext.keys().reduce((object, key) => {
+      return Object.assign(object, { [key.replace(/(^.*\/)|(\.ts$)/g, '')]: modulesContext(key).default })
+    }, {})
+    const result = Object.keys(chunks).reduce((modules, key) => {
+      modules[key] = chunks[key]
+      return modules
+    }, {})
+    return result
+  })()
 }

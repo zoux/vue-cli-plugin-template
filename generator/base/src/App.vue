@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <div>页面APP</div>
+    <div>APP</div>
     <div>\{{ common }}</div>
     <button @click="addCommon">common++</button>
-    <hr><br>
+    <br><hr><br>
     <div id="nav">
       <router-link to="/"><i class="iconfont icon-right"></i>a</router-link> |
       <router-link to="/b"><i class="iconfont icon-right"></i>b</router-link> |
       <router-link to="/b/x"><i class="iconfont icon-right"></i>b-x</router-link>
     </div>
-    <hr><br>
+    <br><hr><br>
     <router-view/>
   </div>
 </template>

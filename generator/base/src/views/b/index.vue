@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div>页面b</div>
-    <hr><br>
+    <div>page B</div>
+    <br><hr><br>
     <router-view/>
   </div>
 </template>
