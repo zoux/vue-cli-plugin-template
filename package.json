@@ -1,6 +1,6 @@
 {
   "name": "@zouxin/vue-cli-plugin-template",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "description": "vue-cli 3 plugin to add @zouxin/vue-template | @zouxin/vue-typescript-template",
   "main": "index.js",
   "repository": {
