@@ -30,6 +30,8 @@
     // 不检测 if 后的 {}
     "curly": false,
     // 不检测单行代码过长
-    "max-line-length": false
+    "max-line-length": false,
+    // 不检测代码块为空
+    "no-empty": false
   }
 }
