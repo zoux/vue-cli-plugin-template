@@ -1,3 +1,8 @@
+# declare
+
+建议使用更高效的 [vue-cli preset](https://github.com/zoux/vue-preset) 来代替该插件生成模版。
+
+
 ## Intro
 
 基于 [vue-template](https://github.com/zoux/vue-template) 和 [vue-typescript-template](https://github.com/zoux/vue-typescript-template) 实现的 vue 2.x + vue-cli 3 插件。
