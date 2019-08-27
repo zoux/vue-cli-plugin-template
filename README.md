@@ -1,19 +1,19 @@
-# declare
+# Notice
 
 建议使用更高效的 [vue-cli preset](https://github.com/zoux/vue-preset) 来代替该插件生成模版。
 
 
 ## Intro
 
-基于 [vue-template](https://github.com/zoux/vue-template) 和 [vue-typescript-template](https://github.com/zoux/vue-typescript-template) 实现的 vue 2.x + vue-cli 3 插件。
+基于 [vue-template](https://github.com/zoux/vue-template) 实现的 vue 2.x + vue-cli 3 插件。
 
 愿景是不再为新项目而重复性的初始化配置，诚恳欢迎 star 和 PR～ (´▽｀)
 
 
-## Use
+## Usage
 
 ```
-vue i @vue/cli -g
+npm i @vue/cli -g
 vue create my-app
 cd my-app
 vue add @zouxin/template
